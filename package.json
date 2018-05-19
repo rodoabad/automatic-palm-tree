@@ -1,0 +1,38 @@
+{
+  "name": "automatic-palm-tree",
+  "version": "1.0.0",
+  "description": "automatic-palm-tree",
+  "scripts": {
+    "start": "npx babel-node ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodoabad/automatic-palm-tree.git"
+  },
+  "author": "Rodo Abad <rodoabad@gmail.com> (https://github.com/rodoabad)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodoabad/automatic-palm-tree/issues"
+  },
+  "homepage": "https://github.com/rodoabad/automatic-palm-tree#readme",
+  "dependencies": {
+    "@okta/okta-react": "^1.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "hapi": "^17.4.0",
+    "hapi-react-views": "^10.0.0",
+    "hapi-webpack-plugin": "^3.0.0",
+    "inert": "^5.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "vision": "^5.3.2",
+    "webpack": "^4.8.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.5",
+    "webpack-cli": "^2.1.3"
+  }
+}
