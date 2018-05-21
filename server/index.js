@@ -27,7 +27,13 @@ const startServer = async () => {
   server.route({
     handler: (request, h) => h.view('index-html'),
     method: 'GET',
-    path: '/'
+    options: {
+      state: {
+        failAction: 'log',
+        parse: true
+      }
+    },
+    path: '/{param*}'
   });
 
   // server.route({
