@@ -4,6 +4,7 @@ const IndexHtml = () => (
   <html>
     <head>
       <title>{'Example'}</title>
+      <base href='/'/>
     </head>
     <body>
       <div className='content' />
