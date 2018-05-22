@@ -2,11 +2,11 @@ const path = require('path');
 
 module.exports = {
   entry: './app/index.js',
-  devtool: 'eval',
+  devtool: 'source-map',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    publicPath: '/dist'
   },
   module: {
     rules: [

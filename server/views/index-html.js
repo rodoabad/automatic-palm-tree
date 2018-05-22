@@ -9,7 +9,7 @@ const IndexHtml = () => (
     <body>
       <div className='content' />
       <script
-        src='app.js'
+        src='dist/app.js'
         type='text/javascript'
       />
     </body>
