@@ -2,6 +2,7 @@
   "name": "automatic-palm-tree",
   "version": "1.0.0",
   "description": "automatic-palm-tree",
+  "private": true,
   "scripts": {
     "start": "babel-node ./server/index.js"
   },
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "cross-env": "^5.1.5",
+    "parcel": "^1.8.1",
     "webpack-cli": "^2.1.3"
   }
 }

@@ -17,6 +17,9 @@ const startServer = async () => {
   await server.register(Inert);
 
   server.views({
+    compileOptions: {
+      renderMethod: 'renderToString'
+    },
     engines: {
       js: HapiReactViews
     },
