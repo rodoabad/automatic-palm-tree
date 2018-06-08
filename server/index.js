@@ -9,8 +9,8 @@ const path = require('path');
 
 const startServer = async () => {
   const server = new Server({
-    host: '0.0.0.0',
-    port: 80
+    host: process.env.HOST || '0.0.0.0',
+    port: process.env.PORT || 80
   });
 
   await server.register(Vision);
