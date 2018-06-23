@@ -39,16 +39,6 @@ const startServer = async () => {
     path: '/{param*}'
   });
 
-  // server.route({
-  //   method: 'GET',
-  //   path: '/{param*}',
-  //   handler: {
-  //     directory: {
-  //       path: 'dist'
-  //     }
-  //   }
-  // });
-
   const compiler = webpack(webpackConfig);
 
   const assets = {

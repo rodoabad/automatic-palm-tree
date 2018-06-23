@@ -1,0 +1,68 @@
+Arguments: 
+  D:\Applications\nodejs\node.exe D:\Applications\Yarn\bin\yarn.js add man-in-the-mirror@latest
+
+PATH: 
+  D:\Applications\Git\mingw64\bin;D:\Applications\Git\usr\bin;C:\Users\rodoabad\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;D:\Applications\WinSCP;D:\Applications\Ant\bin;D:\Applications\Android\android-sdk;D:\Applications\Android\android-sdk\tools;D:\Applications\Android\android-sdk\platform-tools;C:\Program Files\Java\jdk1.7.0_60\bin;D:\Applications\ImageConverter Plus;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Applications\Git\usr\bin;D:\Applications\Python27;D:\Applications\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Users\rodoabad\AppData\Roaming\nvm;D:\Applications\nodejs;D:\Applications\Git\cmd;D:\Applications\Git\mingw64\bin;D:\Applications\Git\usr\bin;D:\Applications\Skype\Phone;D:\Applications\Apache\maven\bin;D:\Applications\Yarn\bin;D:\Elm Platform\0.18\bin;C:\Users\rodoabad\AppData\Local\atom\bin;D:\Applications\ImageConverter Plus;C:\Users\rodoabad\AppData\Local\.meteor;D:\Applications\Git\cmd;C:\Users\rodoabad\AppData\Local\Microsoft\WindowsApps;D:\Applications\Heroku\bin;C:\Users\rodoabad\AppData\Roaming\nvm;D:\Applications\nodejs;C:\Users\rodoabad\AppData\Local\atom\bin;D:\Applications\Microsoft VS Code\bin;C:\Users\rodoabad\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\Web\GitHub\automatic-palm-tree\node_modules\macaddress\lib'
+
+npm manifest: 
+  {
+    "name": "automatic-palm-tree",
+    "version": "1.0.0",
+    "description": "automatic-palm-tree",
+    "private": true,
+    "scripts": {
+      "start": "babel-node ./server/index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/rodoabad/automatic-palm-tree.git"
+    },
+    "author": "Rodo Abad <rodoabad@gmail.com> (https://github.com/rodoabad)",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/rodoabad/automatic-palm-tree/issues"
+    },
+    "homepage": "https://github.com/rodoabad/automatic-palm-tree#readme",
+    "dependencies": {
+      "@okta/okta-react": "^1.0.2",
+      "babel-cli": "^6.26.0",
+      "babel-loader": "^7.1.4",
+      "babel-preset-env": "^1.7.0",
+      "babel-preset-react": "^6.24.1",
+      "hapi": "^17.4.0",
+      "hapi-react-views": "^10.0.0",
+      "hapi-webpack-plugin": "^3.0.0",
+      "inert": "^5.1.0",
+      "man-in-the-mirror": "^1.0.28",
+      "react": "^16.3.2",
+      "react-dom": "^16.3.2",
+      "react-router-dom": "^4.2.2",
+      "vision": "^5.3.2",
+      "webpack": "^4.8.3"
+    },
+    "devDependencies": {
+      "cross-env": "^5.1.5",
+      "node-sass": "^4.9.0",
+      "parcel": "^1.8.1",
+      "postcss-modules": "^1.1.0",
+      "webpack-cli": "^2.1.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
