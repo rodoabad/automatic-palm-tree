@@ -12,22 +12,22 @@ const oktaDomain = process.env.OKTA_DOMAIN || 'https://dev-689082.oktapreview.co
 
 const RouteConfig = () => (
   <Router>
-    {/* <Security
+    <Security
       client_id={clientId}
       issuer={oktaDomain}
       redirect_uri={`${window.location.origin}/implicit/callback`}
-    > */}
-      <ProviderComponent c='c'>
+    >
+      <ProviderComponent>
         <HelloRoute />
         <AnonymousRoute />
         <RestrictedRouteA />
         <RestrictedRouteB />
-        {/* <Route
+        <Route
           component={ImplicitCallback}
           path='/implicit/callback'
-        /> */}
+        />
       </ProviderComponent>
-    {/* </Security> */}
+    </Security>
   </Router>
 );
 
