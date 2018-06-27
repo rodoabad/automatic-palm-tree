@@ -4,7 +4,8 @@
   "description": "automatic-palm-tree",
   "private": true,
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "test": "jest --colors"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,6 @@
   "homepage": "https://github.com/rodoabad/automatic-palm-tree#readme",
   "dependencies": {
     "@okta/okta-react": "^1.0.2",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
     "man-in-the-mirror": "^1.0.31",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -29,10 +27,19 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.5",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.4.2",
     "node-sass": "^4.9.0",
     "parcel": "^1.8.1",
-    "postcss-modules": "^1.1.0"
+    "postcss-modules": "^1.1.0",
+    "react-test-renderer": "^16.4.1"
   }
 }
