@@ -5,7 +5,6 @@ import HelloRoute from './hello-route';
 import React from 'react';
 import RestrictedRouteA from './restricted-route-a';
 import RestrictedRouteB from './restricted-route-b';
-import ProviderComponent from './provider-component-connector';
 
 const clientId = process.env.CLIENT_ID || '0oaf3emz9n7G0xYA20h7';
 const oktaDomain = process.env.OKTA_DOMAIN || 'https://dev-689082.oktapreview.com/oauth2/default';
@@ -17,16 +16,14 @@ const RouteConfig = () => (
       issuer={oktaDomain}
       redirect_uri={`${window.location.origin}/implicit/callback`}
     >
-      <ProviderComponent>
-        <HelloRoute />
-        <AnonymousRoute />
-        <RestrictedRouteA />
-        <RestrictedRouteB />
-        <Route
-          component={ImplicitCallback}
-          path='/implicit/callback'
-        />
-      </ProviderComponent>
+      <HelloRoute />
+      <AnonymousRoute />
+      <RestrictedRouteA />
+      <RestrictedRouteB />
+      <Route
+        component={ImplicitCallback}
+        path='/implicit/callback'
+      />
     </Security>
   </Router>
 );

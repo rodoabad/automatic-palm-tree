@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ManInTheMirror from 'man-in-the-mirror';
 import { anonymous } from './anonymous.scss';
 
 class Anonymous extends Component {
@@ -7,7 +6,6 @@ class Anonymous extends Component {
     return (
       <div className={anonymous}>
         <div>{'Anonymous user.'}</div>
-        <ManInTheMirror />
       </div>
     )
   }
