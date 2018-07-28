@@ -1,5 +1,5 @@
 import Anonymous from '../anonymous';
-import React from 'react';
+import * as  React from 'react';
 import {
   shallow
 } from 'enzyme';
@@ -22,7 +22,7 @@ describe('<Anonymous/>', () => {
     const wrapper = render();
 
     expect(wrapper.props().className).toEqual('anonymous');
-
+    expect(wrapper).toMatchSnapshot();
   });
 
   test('component is for anonymous users', () => {
@@ -30,7 +30,7 @@ describe('<Anonymous/>', () => {
     const wrapper = render();
 
     expect(wrapper.text()).toEqual('Anonymous user.');
-
+    expect(wrapper).toMatchSnapshot();
   });
 
 });

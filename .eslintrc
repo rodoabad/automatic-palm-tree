@@ -1,3 +1,7 @@
 {
-  "extends": "rodoabad"
+  "extends": "rodoabad",
+  "parser": "typescript-eslint-parser",
+  "plugins": [
+    "typescript"
+  ]
 }

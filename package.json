@@ -4,9 +4,9 @@
   "description": "automatic-palm-tree",
   "private": true,
   "scripts": {
-    "lint": "eslint \"./src/**/*.js\" \"./*.js\" --fix",
+    "lint": "eslint \"./src/**/*.tsx\" \"./*.tsx\" --fix",
     "start": "parcel index.html --no-cache",
-    "test": "npm run lint && jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,27 +20,30 @@
   "homepage": "https://github.com/rodoabad/automatic-palm-tree#readme",
   "dependencies": {
     "@okta/okta-react": "^1.0.2",
-    "babel-polyfill": "^6.26.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@types/enzyme": "^3.1.12",
+    "@types/jest": "^23.3.1",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
     "cross-env": "^5.1.5",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
     "eslint": "^5.2.0",
     "eslint-config-rodoabad": "^2.0.0",
+    "eslint-plugin-typescript": "^0.12.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.4.2",
     "node-sass": "^4.9.0",
     "parcel": "^1.8.1",
     "postcss-modules": "^1.1.0",
-    "react-test-renderer": "^16.4.1"
+    "react-test-renderer": "^16.4.1",
+    "ts-jest": "^23.0.1",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^17.0.1"
   }
 }
