@@ -27,6 +27,5 @@ module.exports = {
   testMatch: [
     '<rootDir>/src/**/*.spec.js'
   ],
-  testURL: 'http://localhost/',
-  verbose: true
+  testURL: 'http://localhost/'
 };

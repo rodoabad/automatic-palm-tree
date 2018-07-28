@@ -5,7 +5,7 @@ import {
 
 const Restricted = () => (
   <div className={restricted}>
-    <div>{'Restricted page.'}</div>
+    <div>{'Restricted user.'}</div>
   </div>
 );
 

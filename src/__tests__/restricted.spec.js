@@ -1,10 +1,10 @@
-import ComponentToTest from '../anonymous';
+import ComponentToTest from '../restricted';
 import React from 'react';
 import {
   shallow
 } from 'enzyme';
 
-describe('Anonnymous', () => {
+describe('Restricted', () => {
 
   const requiredProps = () => ({});
   const render = (props = requiredProps()) => shallow(<ComponentToTest {...props}/>);
@@ -21,16 +21,16 @@ describe('Anonnymous', () => {
 
     const wrapper = render();
 
-    expect(wrapper.props().className).toEqual('anonymous');
+    expect(wrapper.props().className).toEqual('restricted');
     expect(wrapper).toMatchSnapshot();
 
   });
 
-  test('component is for anonymous users', () => {
+  test('component is for restricted users', () => {
 
     const wrapper = render();
 
-    expect(wrapper.text()).toEqual('Anonymous user.');
+    expect(wrapper.text()).toEqual('Restricted user.');
     expect(wrapper).toMatchSnapshot();
 
   });

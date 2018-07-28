@@ -4,11 +4,11 @@ import React from 'react';
 // import {SecureRoute} from '@okta/okta-react';
 
 import {
-  Route as SecureRoute
+  Route
 } from 'react-router-dom';
 
 const AnonymousRoute = () => (
-  <SecureRoute
+  <Route
     component={Anonymous}
     path='/anonymous'
   />

@@ -1,10 +1,11 @@
-import ComponentToTest from '../anonymous';
+import ComponentToTest from '../hello';
+import Links from '../links';
 import React from 'react';
 import {
   shallow
 } from 'enzyme';
 
-describe('Anonnymous', () => {
+describe('Hello', () => {
 
   const requiredProps = () => ({});
   const render = (props = requiredProps()) => shallow(<ComponentToTest {...props}/>);
@@ -17,20 +18,20 @@ describe('Anonnymous', () => {
 
   });
 
-  test('component has styles', () => {
+  test('component has links', () => {
 
-    const wrapper = render();
+    const wrapper = render().find(Links);
 
-    expect(wrapper.props().className).toEqual('anonymous');
+    expect(wrapper.exists()).toEqual(true);
     expect(wrapper).toMatchSnapshot();
 
   });
 
-  test('component is for anonymous users', () => {
+  test('component has a welcome message', () => {
 
-    const wrapper = render();
+    const wrapper = render().find('[data-test="hello"]');
 
-    expect(wrapper.text()).toEqual('Anonymous user.');
+    expect(wrapper.text()).toEqual('Hello, world!');
     expect(wrapper).toMatchSnapshot();
 
   });

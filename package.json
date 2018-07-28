@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint \"./src/**/*.js\" \"./*.js\" --fix",
     "start": "parcel index.html --no-cache",
-    "test": "npm run lint && jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

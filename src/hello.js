@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hello = () => (
   <div>
-    <div>{'Hello, world!'}</div>
+    <h1 data-test='hello'>{'Hello, world!'}</h1>
     <Links/>
   </div>
 );

@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Links component has the correct links 1`] = `
+<Link
+  replace={false}
+  to="/"
+>
+  Home
+</Link>
+`;
+
+exports[`Links component has the correct links 2`] = `
+<Link
+  replace={false}
+  to="/anonymous"
+>
+  Anonymous
+</Link>
+`;
+
+exports[`Links component has the correct links 3`] = `
+<Link
+  replace={false}
+  to="/restricted-a"
+>
+  Restricted A
+</Link>
+`;
+
+exports[`Links component has the correct links 4`] = `
+<Link
+  replace={false}
+  to="/restricted-b"
+>
+  Restricted B
+</Link>
+`;
+
+exports[`Links component has the correct links 5`] = `
+Array [
+  <li>
+    <Link
+      replace={false}
+      to="/"
+    >
+      Home
+    </Link>
+  </li>,
+  <li>
+    <Link
+      replace={false}
+      to="/anonymous"
+    >
+      Anonymous
+    </Link>
+  </li>,
+  <li>
+    <Link
+      replace={false}
+      to="/restricted-a"
+    >
+      Restricted A
+    </Link>
+  </li>,
+  <li>
+    <Link
+      replace={false}
+      to="/restricted-b"
+    >
+      Restricted B
+    </Link>
+  </li>,
+]
+`;
+
+exports[`Links component renders 1`] = `
+<ul
+  data-test="links"
+>
+  <li>
+    <Link
+      replace={false}
+      to="/"
+    >
+      Home
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
+      to="/anonymous"
+    >
+      Anonymous
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
+      to="/restricted-a"
+    >
+      Restricted A
+    </Link>
+  </li>
+  <li>
+    <Link
+      replace={false}
+      to="/restricted-b"
+    >
+      Restricted B
+    </Link>
+  </li>
+</ul>
+`;

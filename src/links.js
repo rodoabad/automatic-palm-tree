@@ -4,7 +4,7 @@ import {
 import React from 'react';
 
 const Links = () => (
-  <ul>
+  <ul data-test='links'>
     <li>
       <Link to='/'>{'Home'}</Link>
     </li>
