@@ -1,7 +1,10 @@
 import React from 'react';
+import {
+  restricted
+} from './restricted.scss';
 
 const Restricted = () => (
-  <div>
+  <div className={restricted}>
     <div>{'Restricted page.'}</div>
   </div>
 );
