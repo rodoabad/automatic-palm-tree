@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Anonymous/> component renders 1`] = `
+<div
+  className="anonymous"
+>
+  <div>
+    Anonymous user.
+  </div>
+</div>
+`;

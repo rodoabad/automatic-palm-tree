@@ -4,9 +4,9 @@
   "description": "automatic-palm-tree",
   "private": true,
   "scripts": {
-    "lint": "eslint \"./src/**/*.js\" \"./*.js\"",
+    "lint": "eslint \"./src/**/*.js\" \"./*.js\" --fix",
     "start": "parcel index.html --no-cache",
-    "test": "npm run lint"
+    "test": "npm run lint && jest"
   },
   "repository": {
     "type": "git",
@@ -21,16 +21,11 @@
   "dependencies": {
     "@okta/okta-react": "^1.0.2",
     "babel-polyfill": "^6.26.0",
-    "man-in-the-mirror": "^1.0.31",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "redux": "^4.0.0"
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
-    "@types/react": "^16.4.7",
-    "@types/react-dom": "^16.0.6",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -42,7 +37,7 @@
     "eslint": "^5.2.0",
     "eslint-config-rodoabad": "^2.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.4.2",
+    "jest": "^23.4.2",
     "node-sass": "^4.9.0",
     "parcel": "^1.8.1",
     "postcss-modules": "^1.1.0",
