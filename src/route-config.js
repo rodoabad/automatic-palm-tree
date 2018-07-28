@@ -1,8 +1,10 @@
 import {
-  ImplicitCallback, Security
+  ImplicitCallback,
+  Security
 } from '@okta/okta-react';
 import {
-  Route, BrowserRouter as Router
+  Route,
+  BrowserRouter as Router
 } from 'react-router-dom';
 import AnonymousRoute from './anonymous-route';
 import HelloRoute from './hello-route';
