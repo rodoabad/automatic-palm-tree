@@ -1,11 +1,9 @@
 import React from 'react';
-import ManInTheMirror from 'man-in-the-mirror';
 
 const Restricted = () => (
-    <div>
-        <div>{'Restricted page.'}</div>
-        <ManInTheMirror/>
-    </div>
+  <div>
+    <div>{'Restricted page.'}</div>
+  </div>
 );
 
 export default Restricted;

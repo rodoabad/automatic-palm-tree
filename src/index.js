@@ -1,9 +1,10 @@
 import React from 'react';
-import { hydrate } from 'react-dom';
 import RouteConfig from './route-config';
+import {
+  render
+} from 'react-dom';
 
-
-hydrate(
-  <RouteConfig />,
+render(
+  <RouteConfig/>,
   document.querySelector('.content')
 );

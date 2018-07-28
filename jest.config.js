@@ -1,29 +1,31 @@
+const coverageThreshold = 100;
+
 module.exports = {
   bail: true,
   collectCoverage: false,
   collectCoverageFrom: [
-      'src/**/*.js'
+    'src/**/*.js'
   ],
   coverageReporters: [
-      'text'
+    'text'
   ],
   coverageThreshold: {
-      global: {
-          branches: 100,
-          functions: 100,
-          lines: 100,
-          statements: 100
-      }
+    global: {
+      branches: coverageThreshold,
+      functions: coverageThreshold,
+      lines: coverageThreshold,
+      statements: coverageThreshold
+    }
   },
   moduleNameMapper: {
-      '^.+\\.(scss)$': 'identity-obj-proxy'
+    '^.+\\.(scss)$': 'identity-obj-proxy'
   },
   setupTestFrameworkScriptFile: '<rootDir>/helpers/jest-setup.js',
   snapshotSerializers: [
-      'enzyme-to-json/serializer'
+    'enzyme-to-json/serializer'
   ],
   testMatch: [
-      '<rootDir>/src/**/*.spec.js'
+    '<rootDir>/src/**/*.spec.js'
   ],
   verbose: true
 };
