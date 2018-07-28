@@ -5,7 +5,6 @@ import {
   Route, BrowserRouter as Router
 } from 'react-router-dom';
 import AnonymousRoute from './anonymous-route';
-import HelloRoute from './hello-route';
 import React from 'react';
 import RestrictedRouteA from './restricted-route-a';
 import RestrictedRouteB from './restricted-route-b';
@@ -20,7 +19,6 @@ const RouteConfig = () => (
       issuer={oktaDomain}
       redirect_uri={`${window.location.origin}/implicit/callback`}
     >
-      <HelloRoute/>
       <AnonymousRoute/>
       <RestrictedRouteA/>
       <RestrictedRouteB/>
