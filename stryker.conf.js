@@ -1,7 +1,7 @@
 module.exports = (config) => {
   config.set({
     babelrcFile: '.babelrc',
-    coverageAnalysis: 'on',
+    coverageAnalysis: 'all',
     logLevel: 'warn',
     mutate: [
       'src/**/*.js',
