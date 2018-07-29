@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/rodoabad/automatic-palm-tree.svg?branch=master)](https://travis-ci.org/rodoabad/automatic-palm-tree)
 [![Mutation testing badge](https://badge.stryker-mutator.io/github.com/rodoabad/automatic-palm-tree/master)](https://stryker-mutator.github.io)
 
 # Requirements
