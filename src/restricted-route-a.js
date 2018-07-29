@@ -1,10 +1,6 @@
 import React from 'react';
 import Restricted from './restricted';
-import {
-  SecureRoute as Route
-} from '@okta/okta-react';
-
-// import {Route as SecureRoute} from 'react-router-dom';
+import {SecureRoute as Route} from '@okta/okta-react';
 
 const RestrictedRouteA = () => (
   <Route

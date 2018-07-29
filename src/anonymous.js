@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  anonymous
-} from './anonymous.scss';
+import {anonymous} from './anonymous.scss';
 
 const Anonymous = () => (
   <div className={anonymous}>

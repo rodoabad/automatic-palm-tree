@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RouteConfig component renders 1`] = `
+<BrowserRouter>
+  <withRouter(Security)
+    client_id="0oaf3emz9n7G0xYA20h7"
+    issuer="https://dev-689082.oktapreview.com/oauth2/default"
+    redirect_uri="http://localhost/implicit/callback"
+  >
+    <HelloRoute />
+    <AnonymousRoute />
+    <RestrictedRouteA />
+    <RestrictedRouteB />
+    <Route
+      component={[Function]}
+      path="/implicit/callback"
+    />
+  </withRouter(Security)>
+</BrowserRouter>
+`;
+
+exports[`RouteConfig component to use browser history 1`] = `
+<BrowserRouter>
+  <withRouter(Security)
+    client_id="0oaf3emz9n7G0xYA20h7"
+    issuer="https://dev-689082.oktapreview.com/oauth2/default"
+    redirect_uri="http://localhost/implicit/callback"
+  >
+    <HelloRoute />
+    <AnonymousRoute />
+    <RestrictedRouteA />
+    <RestrictedRouteB />
+    <Route
+      component={[Function]}
+      path="/implicit/callback"
+    />
+  </withRouter(Security)>
+</BrowserRouter>
+`;
+
+exports[`RouteConfig include AnonymousRoute 1`] = `<AnonymousRoute />`;
+
+exports[`RouteConfig include HelloRoute 1`] = `<HelloRoute />`;
+
+exports[`RouteConfig include RestrictedRouteA 1`] = `<RestrictedRouteA />`;
+
+exports[`RouteConfig include RestrictedRouteB 1`] = `<RestrictedRouteB />`;
+
+exports[`RouteConfig routes have Okta security 1`] = `
+<withRouter(Security)
+  client_id="0oaf3emz9n7G0xYA20h7"
+  issuer="https://dev-689082.oktapreview.com/oauth2/default"
+  redirect_uri="http://localhost/implicit/callback"
+>
+  <HelloRoute />
+  <AnonymousRoute />
+  <RestrictedRouteA />
+  <RestrictedRouteB />
+  <Route
+    component={[Function]}
+    path="/implicit/callback"
+  />
+</withRouter(Security)>
+`;
+
+exports[`RouteConfig routes have Okta security 2`] = `
+<withRouter(Security)
+  client_id="0oaf3emz9n7G0xYA20h7"
+  issuer="https://dev-689082.oktapreview.com/oauth2/default"
+  redirect_uri="http://localhost/implicit/callback"
+>
+  <HelloRoute />
+  <AnonymousRoute />
+  <RestrictedRouteA />
+  <RestrictedRouteB />
+  <Route
+    component={[Function]}
+    path="/implicit/callback"
+  />
+</withRouter(Security)>
+`;

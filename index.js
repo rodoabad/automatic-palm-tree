@@ -1,8 +1,6 @@
 import React from 'react';
-import RouteConfig from './route-config';
-import {
-  render
-} from 'react-dom';
+import RouteConfig from './src/route-config';
+import {render} from 'react-dom';
 
 render(
   <RouteConfig/>,

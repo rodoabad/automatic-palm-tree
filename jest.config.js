@@ -2,7 +2,7 @@ const coverageThreshold = 100;
 
 module.exports = {
   bail: true,
-  collectCoverage: false,
+  collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.js'
   ],
@@ -20,6 +20,8 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(scss)$': 'identity-obj-proxy'
   },
+  resetMocks: true,
+  resetModules: true,
   setupTestFrameworkScriptFile: '<rootDir>/helpers/jest-setup.js',
   snapshotSerializers: [
     'enzyme-to-json/serializer'
