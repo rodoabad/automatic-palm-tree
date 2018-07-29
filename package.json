@@ -8,9 +8,9 @@
     "build": "parcel build index.html --experimental-scope-hoisting",
     "lint": "eslint \"./src/**/*.js\" \"./*.js\" --fix",
     "start": "parcel index.html",
-    "test": "jest",
-    "test-mutation": "stryker run",
-    "verify": "yarn run lint && yarn run test && yarn run test-mutation"
+    "test": "yarn run lint && yarn run test && yarn run test-mutation",
+    "test-unit": "jest",
+    "test-mutation": "stryker run"
   },
   "repository": {
     "type": "git",
