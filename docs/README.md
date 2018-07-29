@@ -6,11 +6,11 @@
 
 ```
 git clone git@github.com:rodoabad/automatic-palm-tree.git
-npm i
+yarn i
 ```
 
 # Usage
 
 ```
-npm run start
+yarn run start
 ```
