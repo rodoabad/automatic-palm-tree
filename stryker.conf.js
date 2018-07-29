@@ -2,7 +2,11 @@ module.exports = (config) => {
   config.set({
     babelrcFile: '.babelrc',
     coverageAnalysis: 'off',
-    mutate: ['src/**/*.js'],
+    logLevel: 'warn',
+    mutate: [
+      'src/**/*.js',
+      '!src/**/__tests__/**/*.js'
+    ],
     mutator: 'javascript',
     packageManager: 'yarn',
     reporter: ['clear-text', 'progress'],
