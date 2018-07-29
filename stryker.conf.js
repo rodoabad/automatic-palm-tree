@@ -11,7 +11,7 @@ module.exports = (config) => {
     packageManager: 'yarn',
     reporter: [
       'clear-text',
-      'darhboard',
+      'dashboard',
       'progress'
     ],
     testRunner: 'jest',
