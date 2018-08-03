@@ -18,10 +18,6 @@ const linksList = [
   {
     label: 'Restricted B',
     url: '/restricted-b'
-  },
-  {
-    label: 'Charts',
-    url: '/charts'
   }
 ];
 
