@@ -5,7 +5,7 @@
       "grid": true
     },
     "postcss-modules": {
-        "generateScopedName": "[path]_[name]__[local]___[hash:base64:5]"
+        "generateScopedName": "[path]_[name]__[local]"
     }
   }
 }

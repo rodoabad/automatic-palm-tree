@@ -1,0 +1,9 @@
+.home {
+  border: 1px solid blue;
+  display: grid;
+
+  grid-template-areas:
+    'hello'
+    'links'
+    'main';
+ }

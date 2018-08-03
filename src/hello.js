@@ -1,11 +1,10 @@
-import Links from './links';
 import React from 'react';
+import {hello} from './hello.scss';
 
 const Hello = () => (
-  <div>
-    <h1 data-test='hello'>{'Hello, world!'}</h1>
-    <Links/>
-  </div>
+  <h1 className={hello}>
+    {'Hello, world!!'}
+  </h1>
 );
 
 export default Hello;

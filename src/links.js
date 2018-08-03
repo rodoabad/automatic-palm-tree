@@ -1,20 +1,40 @@
 import {Link} from 'react-router-dom';
 import React from 'react';
+import {links} from './links.scss';
+
+const linksList = [
+  {
+    label: 'Home',
+    url: '/'
+  },
+  {
+    label: 'Anonymous',
+    url: '/anonymous'
+  },
+  {
+    label: 'Restricted A',
+    url: '/restricted-a'
+  },
+  {
+    label: 'Restricted B',
+    url: '/restricted-b'
+  },
+  {
+    label: 'Charts',
+    url: '/charts'
+  }
+];
 
 const Links = () => (
-  <ul data-test='links'>
-    <li>
-      <Link to='/'>{'Home'}</Link>
-    </li>
-    <li>
-      <Link to='/anonymous'>{'Anonymous'}</Link>
-    </li>
-    <li>
-      <Link to='/restricted-a'>{'Restricted A'}</Link>
-    </li>
-    <li>
-      <Link to='/restricted-b'>{'Restricted B'}</Link>
-    </li>
+  <ul
+    className={links}
+    data-test='links'
+  >
+    {linksList.map((link) => (
+      <li key={link.url}>
+        <Link to={link.url}>{link.label}</Link>
+      </li>
+    ))}
   </ul>
 );
 
