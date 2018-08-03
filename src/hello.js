@@ -3,7 +3,7 @@ import {hello} from './hello.scss';
 
 const Hello = () => (
   <h1 className={hello}>
-    {'Hello, world!!'}
+    {'Hello, world!!!'}
   </h1>
 );
 

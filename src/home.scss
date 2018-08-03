@@ -2,8 +2,17 @@
   border: 1px solid blue;
   display: grid;
 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    'hello'
-    'links'
-    'main';
+    'hello hello'
+    'links links'
+    'facets main';
  }
+
+:global {
+  body {
+   box-sizing: border-box;
+   margin: 0;
+  }
+}
