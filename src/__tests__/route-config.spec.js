@@ -2,7 +2,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import {ImplicitCallback, Security} from '@okta/okta-react';
 import AnonymousRoute from '../anonymous-route';
 import ComponentToTest from '../route-config';
-import HelloRoute from '../hello-route';
+import HomeRoute from '../home-route';
 import React from 'react';
 import RestrictedRouteA from '../restricted-route-a';
 import RestrictedRouteB from '../restricted-route-b';
@@ -49,8 +49,8 @@ describe('RouteConfig', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('include HelloRoute', () => {
-    const wrapper = render().find(Security).children(HelloRoute);
+  test('include HomeRoute', () => {
+    const wrapper = render().find(Security).children(HomeRoute);
 
     expect(wrapper.exists()).toEqual(true);
     expect(wrapper).toMatchSnapshot();

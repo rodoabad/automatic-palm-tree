@@ -1,8 +1,8 @@
-import ComponentToTest from '../hello';
+import ComponentToTest from '../home';
 import React from 'react';
 import {shallow} from 'enzyme';
 
-describe('Hello', () => {
+describe('Home', () => {
   const requiredProps = () => ({
   });
   const render = (props = requiredProps()) => shallow(<ComponentToTest {...props}/>);
@@ -12,12 +12,4 @@ describe('Hello', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
-
-  test('component has a welcome message', () => {
-    const wrapper = render().find('[data-test="hello"]');
-
-    expect(wrapper.text()).toEqual('Hello, world!');
-    expect(wrapper).toMatchSnapshot();
-  });
 });
-

@@ -2,21 +2,18 @@
 
 exports[`Hello component has a welcome message 1`] = `
 <h1
+  className="hello"
   data-test="hello"
 >
   Hello, world!
 </h1>
 `;
 
-exports[`Hello component has links 1`] = `<Links />`;
-
 exports[`Hello component renders 1`] = `
-<div>
-  <h1
-    data-test="hello"
-  >
-    Hello, world!
-  </h1>
-  <Links />
-</div>
+<h1
+  className="hello"
+  data-test="hello"
+>
+  Hello, world!
+</h1>
 `;

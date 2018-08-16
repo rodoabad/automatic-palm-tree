@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HelloRoute component renders 1`] = `
+exports[`HomeRoute component renders 1`] = `
 <Route
   component={[Function]}
   path="/"
 />
 `;
 
-exports[`HelloRoute component to be open for non authorized users 1`] = `
+exports[`HomeRoute component to be open for non authorized users 1`] = `
 <Route
   component={[Function]}
   path="/"
 />
 `;
 
-exports[`HelloRoute path is correct 1`] = `
+exports[`HomeRoute path is correct 1`] = `
 <Route
   component={[Function]}
   path="/"
 />
 `;
 
-exports[`HelloRoute route renders Hello 1`] = `
+exports[`HomeRoute route renders Home 1`] = `
 <Route
   component={[Function]}
   path="/"

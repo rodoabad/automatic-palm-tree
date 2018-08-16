@@ -1,10 +1,10 @@
-import ComponentToTest from '../hello-route';
-import Hello from '../hello';
+import ComponentToTest from '../home-route';
+import Home from '../home';
 import React from 'react';
 import {Route} from 'react-router-dom';
 import {shallow} from 'enzyme';
 
-describe('HelloRoute', () => {
+describe('HomeRoute', () => {
   const requiredProps = () => ({
   });
   const render = (props = requiredProps()) => shallow(<ComponentToTest {...props}/>);
@@ -22,10 +22,10 @@ describe('HelloRoute', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('route renders Hello', () => {
+  test('route renders Home', () => {
     const wrapper = render();
 
-    expect(wrapper.props().component).toEqual(Hello);
+    expect(wrapper.props().component).toEqual(Home);
     expect(wrapper).toMatchSnapshot();
   });
 

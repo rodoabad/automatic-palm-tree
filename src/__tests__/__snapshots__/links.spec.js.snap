@@ -38,7 +38,9 @@ exports[`Links component has the correct links 4`] = `
 
 exports[`Links component has the correct links 5`] = `
 Array [
-  <li>
+  <li
+    key="/"
+  >
     <Link
       replace={false}
       to="/"
@@ -46,7 +48,9 @@ Array [
       Home
     </Link>
   </li>,
-  <li>
+  <li
+    key="/anonymous"
+  >
     <Link
       replace={false}
       to="/anonymous"
@@ -54,7 +58,9 @@ Array [
       Anonymous
     </Link>
   </li>,
-  <li>
+  <li
+    key="/restricted-a"
+  >
     <Link
       replace={false}
       to="/restricted-a"
@@ -62,7 +68,9 @@ Array [
       Restricted A
     </Link>
   </li>,
-  <li>
+  <li
+    key="/restricted-b"
+  >
     <Link
       replace={false}
       to="/restricted-b"
@@ -75,9 +83,12 @@ Array [
 
 exports[`Links component renders 1`] = `
 <ul
+  className="links"
   data-test="links"
 >
-  <li>
+  <li
+    key="/"
+  >
     <Link
       replace={false}
       to="/"
@@ -85,7 +96,9 @@ exports[`Links component renders 1`] = `
       Home
     </Link>
   </li>
-  <li>
+  <li
+    key="/anonymous"
+  >
     <Link
       replace={false}
       to="/anonymous"
@@ -93,7 +106,9 @@ exports[`Links component renders 1`] = `
       Anonymous
     </Link>
   </li>
-  <li>
+  <li
+    key="/restricted-a"
+  >
     <Link
       replace={false}
       to="/restricted-a"
@@ -101,7 +116,9 @@ exports[`Links component renders 1`] = `
       Restricted A
     </Link>
   </li>
-  <li>
+  <li
+    key="/restricted-b"
+  >
     <Link
       replace={false}
       to="/restricted-b"

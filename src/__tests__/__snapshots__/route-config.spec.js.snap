@@ -7,7 +7,7 @@ exports[`RouteConfig component renders 1`] = `
     issuer="https://dev-689082.oktapreview.com/oauth2/default"
     redirect_uri="http://localhost/implicit/callback"
   >
-    <HelloRoute />
+    <HomeRoute />
     <AnonymousRoute />
     <RestrictedRouteA />
     <RestrictedRouteB />
@@ -26,7 +26,7 @@ exports[`RouteConfig component to use browser history 1`] = `
     issuer="https://dev-689082.oktapreview.com/oauth2/default"
     redirect_uri="http://localhost/implicit/callback"
   >
-    <HelloRoute />
+    <HomeRoute />
     <AnonymousRoute />
     <RestrictedRouteA />
     <RestrictedRouteB />
@@ -40,7 +40,7 @@ exports[`RouteConfig component to use browser history 1`] = `
 
 exports[`RouteConfig include AnonymousRoute 1`] = `<AnonymousRoute />`;
 
-exports[`RouteConfig include HelloRoute 1`] = `<HelloRoute />`;
+exports[`RouteConfig include HomeRoute 1`] = `<HomeRoute />`;
 
 exports[`RouteConfig include RestrictedRouteA 1`] = `<RestrictedRouteA />`;
 
@@ -52,7 +52,7 @@ exports[`RouteConfig routes have Okta security 1`] = `
   issuer="https://dev-689082.oktapreview.com/oauth2/default"
   redirect_uri="http://localhost/implicit/callback"
 >
-  <HelloRoute />
+  <HomeRoute />
   <AnonymousRoute />
   <RestrictedRouteA />
   <RestrictedRouteB />
@@ -69,7 +69,7 @@ exports[`RouteConfig routes have Okta security 2`] = `
   issuer="https://dev-689082.oktapreview.com/oauth2/default"
   redirect_uri="http://localhost/implicit/callback"
 >
-  <HelloRoute />
+  <HomeRoute />
   <AnonymousRoute />
   <RestrictedRouteA />
   <RestrictedRouteB />
