@@ -7,7 +7,7 @@
   "scripts": {
     "build": "parcel build index.html --experimental-scope-hoisting --no-cache",
     "lint": "eslint \"./src/**/*.js\" \"./*.js\" --fix",
-    "start": "parcel index.html",
+    "start": "parcel index.html --no-cache --port 8080 --hmr-port 8888",
     "test": "npm run lint && npm run test-unit && npm run test-mutation",
     "test-unit": "jest",
     "test-mutation": "stryker run"
