@@ -16,7 +16,7 @@ docker-compose build
 # Usage
 
 ```
-docker-compose run dev npm run start
+docker-compose up
 ```
 
 ```

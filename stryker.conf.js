@@ -8,7 +8,7 @@ module.exports = (config) => {
       '!src/**/__tests__/**/*.js'
     ],
     mutator: 'javascript',
-    packageManager: 'yarn',
+    packageManager: 'npm',
     reporter: [
       'clear-text',
       'dashboard',
