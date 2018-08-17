@@ -3,17 +3,22 @@
 
 # Requirements
 
+- Docker `18.x`
 - Node `8.x`
 
 # Install
 
 ```
 git clone git@github.com:rodoabad/automatic-palm-tree.git
-yarn i
+docker-compose build
 ```
 
 # Usage
 
 ```
-yarn run start
+docker-compose run dev npm run start
+```
+
+```
+docker-compose run dev npm run test
 ```
