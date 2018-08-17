@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  dev:
+    container_name: automatic-palm-tree
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app/'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '1234:1234'
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=1
