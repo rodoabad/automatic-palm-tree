@@ -16,7 +16,7 @@ describe('Hello', () => {
   test('component has a welcome message', () => {
     const wrapper = render().find('[data-test="hello"]');
 
-    expect(wrapper.text()).toEqual('Hello, world!');
+    expect(wrapper.text()).toEqual('Hello, World!');
     expect(wrapper).toMatchSnapshot();
   });
 });
