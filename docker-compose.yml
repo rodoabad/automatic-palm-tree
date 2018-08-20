@@ -3,7 +3,7 @@ version: '3'
 services:
 
   dev:
-    container_name: automatic-palm-tree
+    image: automatic-palm-tree
     build:
       context: .
       dockerfile: Dockerfile
@@ -16,4 +16,21 @@ services:
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=1
+    env_file:
+      - ./.env.dev
+      - ./.credentials
     command: npm run start
+
+  test:
+    image: automatic-palm-tree
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/app/'
+      - '/usr/src/app/node_modules'
+    environment:
+      - NODE_ENV=test
+    env_file:
+      - ./.env.test
+    command: npm run test

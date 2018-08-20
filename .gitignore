@@ -1,5 +1,6 @@
 .cache
 .DS_STORE
+.credentials
 .idea
 dist
 node_modules

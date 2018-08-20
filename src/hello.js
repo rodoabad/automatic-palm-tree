@@ -7,7 +7,9 @@ const Hello = () => (
     data-test='hello'
   >
 
-    {'Hello, world!'}
+    {
+      `${process.env.MESSAGE}, ${process.env.NAME}!` // eslint-disable-line no-process-env
+    }
   </h1>
 );
 
