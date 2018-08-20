@@ -14,6 +14,6 @@ exports[`Hello component renders 1`] = `
   className="hello"
   data-test="hello"
 >
-  Hello, world!
+  Hello, World!
 </h1>
 `;
