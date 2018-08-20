@@ -5,7 +5,7 @@ exports[`Hello component has a welcome message 1`] = `
   className="hello"
   data-test="hello"
 >
-  Hello, world!
+  Hello, World!
 </h1>
 `;
 
