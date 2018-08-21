@@ -1,7 +1,6 @@
 version: '3'
 
 services:
-
   dev:
     image: automatic-palm-tree
     build:
@@ -15,7 +14,6 @@ services:
       - '8888:8888'
     environment:
       - NODE_ENV=development
-      - CHOKIDAR_USEPOLLING=1
     env_file:
       - ./.env.dev
     command: npm run start
