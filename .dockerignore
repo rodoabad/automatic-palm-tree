@@ -1,4 +1,2 @@
-.cache
 .stryker*
-dist
 node_modules
