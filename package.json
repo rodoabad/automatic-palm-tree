@@ -5,7 +5,7 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "parcel build index.html --experimental-scope-hoisting --no-cache",
+    "build": "cross-env NODE_ENV=dev parcel build index.html --no-cache",
     "lint": "eslint \"./src/**/*.js\" \"./*.js\" --fix",
     "start": "cross-env NODE_ENV=dev parcel index.html --no-cache --port 8080 --hmr-port 8888",
     "test": "npm run lint && npm run test-unit && npm run test-mutation",
@@ -32,7 +32,7 @@
     "recharts": "^1.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
+    "autoprefixer": "^9.1.5",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -45,8 +45,9 @@
     "eslint-config-rodoabad": "^2.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.4.2",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.3",
     "parcel": "^1.8.1",
+    "postcss": "^7.0.2",
     "postcss-modules": "^1.1.0",
     "react-test-renderer": "^16.4.1",
     "stryker": "^0.25.1",

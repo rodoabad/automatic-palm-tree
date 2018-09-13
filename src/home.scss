@@ -2,12 +2,17 @@
   border: 1px solid darkseagreen;
   display: grid;
 
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     'hello hello'
-    'links links'
+    'links links';
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
  }
+
+.home .links {
+  grid-area: links;
+}
 
 :global {
   body,
