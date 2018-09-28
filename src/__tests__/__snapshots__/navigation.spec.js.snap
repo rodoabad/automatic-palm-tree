@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component renders 1`] = `
+<div>
+  <WithStyles(AppBar)
+    position="static"
+  >
+    <WithStyles(Tabs)
+      onChange={[Function]}
+      value={0}
+    >
+      <WithStyles(Tab)
+        component={[Function]}
+        disableRipple={true}
+        disableTouchRipple={true}
+        icon={<pure(HomeIcon) />}
+        to="/"
+      />
+      <WithStyles(Tab)
+        component={[Function]}
+        disableRipple={true}
+        disableTouchRipple={true}
+        label="Anonymous"
+        to="/anonymous"
+      />
+      <WithStyles(Tab)
+        component={[Function]}
+        disableRipple={true}
+        disableTouchRipple={true}
+        label="Restricted A"
+        to="/restricted-a"
+      />
+      <WithStyles(Tab)
+        component={[Function]}
+        disableRipple={true}
+        disableTouchRipple={true}
+        label="Restricted B"
+        to="/restricted-b"
+      />
+    </WithStyles(Tabs)>
+  </WithStyles(AppBar)>
+</div>
+`;

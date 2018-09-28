@@ -1,13 +1,17 @@
-import Hello from './hello';
-import Links from './links';
+import {Hello} from './hello';
+import PropTypes from 'prop-types';
 import React from 'react';
-import {home} from './home.scss';
 
-const Home = () => (
-  <div className={home}>
-    <Hello/>
-    <Links/>
-  </div>
+export const Home = ({className}) => (
+  <section className={className}>
+    <Hello />
+  </section>
 );
 
-export default Home;
+Home.propTypes = {
+  className: PropTypes.string
+};
+
+Home.defaultProps = {
+  className: ''
+};

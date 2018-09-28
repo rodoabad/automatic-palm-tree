@@ -1,0 +1,18 @@
+.pageContainer {
+  display: grid;
+
+  grid-template-areas:
+    'navigation navigation'
+    'main main';
+
+  grid-template-columns: repeat(2, fr);
+  grid-template-rows: repeat(2, fr);
+ }
+
+.navigation {
+  grid-area: navigation;
+}
+
+.main {
+  grid-area: main;
+}

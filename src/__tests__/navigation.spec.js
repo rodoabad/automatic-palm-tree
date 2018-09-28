@@ -1,11 +1,11 @@
-import {Anonymous} from '../anonymous';
+import {Navigation} from '../navigation';
 import React from 'react';
 import {shallow} from 'enzyme';
 
-describe('Anonnymous', () => {
+describe('Navigation', () => {
   const requiredProps = () => ({
   });
-  const render = (props = requiredProps()) => shallow(<Anonymous {...props}/>);
+  const render = (props = requiredProps()) => shallow(<Navigation {...props}/>);
 
   test('component renders', () => {
     const wrapper = render();
@@ -13,4 +13,3 @@ describe('Anonnymous', () => {
     expect(wrapper).toMatchSnapshot();
   });
 });
-

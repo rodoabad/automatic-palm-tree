@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home component renders 1`] = `
-<div
-  className="home"
+<section
+  className=""
 >
-  <Hello />
-  <Links />
-</div>
+  <Hello
+    className=""
+  />
+</section>
 `;

@@ -1,4 +1,33 @@
+$breakpoint-tablet: 60em;
+
 .hello {
-  border: 1px solid deepskyblue;
-  grid-area: hello;
+  border: 0.01em solid deepskyblue;
+
+  display: grid;
+  grid-template-areas:
+    'message name';
+
+    grid-template-columns: repear(2, 1fr);
+}
+
+.message {
+  grid-area: message;
+}
+
+.name {
+  grid-area: name;
+}
+
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@include media($breakpoint-tablet) {
+  .hello {
+    grid-template-areas:
+    'message'
+    'name';
+  }
 }

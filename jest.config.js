@@ -2,7 +2,7 @@ const coverageThreshold = 100;
 
 module.exports = {
   bail: true,
-  collectCoverage: true,
+  collectCoverage: false,
   collectCoverageFrom: [
     'src/**/*.js'
   ],

@@ -1,12 +1,15 @@
-import Anonymous from './anonymous';
+import {Anonymous} from './anonymous';
 import React from 'react';
 import {Route} from 'react-router-dom';
 
-const AnonymousRoute = () => (
+export const AnonymousRoute = (props) => (
   <Route
-    component={Anonymous}
     path='/anonymous'
+    render={(routeProps) => (
+      <Anonymous
+        {...routeProps}
+        {...props}
+      />
+    )}
   />
 );
-
-export default AnonymousRoute;

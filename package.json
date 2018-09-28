@@ -7,7 +7,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=dev parcel build index.html --no-cache",
     "lint": "eslint \"./src/**/*.js\" \"./*.js\" --fix",
-    "start": "cross-env NODE_ENV=dev parcel index.html --no-cache --port 8080 --hmr-port 8888",
+    "start": "rm -rf ./dist/ && cross-env NODE_ENV=dev parcel index.html --no-cache --port 8080 --hmr-port 8888",
     "test": "npm run lint && npm run test-unit && npm run test-mutation",
     "test-unit": "jest",
     "test-mutation": "stryker run"
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/rodoabad/automatic-palm-tree#readme",
   "dependencies": {
+    "@material-ui/core": "^3.1.0",
+    "@material-ui/icons": "^3.0.1",
     "@okta/okta-react": "^1.0.2",
     "babel-polyfill": "^6.26.0",
     "react": "^16.3.2",

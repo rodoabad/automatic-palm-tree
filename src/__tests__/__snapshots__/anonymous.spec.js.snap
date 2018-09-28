@@ -1,31 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Anonnymous component has styles 1`] = `
-<div
-  className="anonymous"
->
-  <div>
-    Anonymous user.
-  </div>
-</div>
-`;
-
-exports[`Anonnymous component is for anonymous users 1`] = `
-<div
-  className="anonymous"
->
-  <div>
-    Anonymous user.
-  </div>
-</div>
-`;
-
 exports[`Anonnymous component renders 1`] = `
-<div
-  className="anonymous"
+<section
+  className=" anonymous"
 >
   <div>
     Anonymous user.
   </div>
-</div>
+</section>
 `;

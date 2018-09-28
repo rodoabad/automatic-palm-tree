@@ -1,10 +1,7 @@
 import {ImplicitCallback, Security} from '@okta/okta-react';
 import {Route, BrowserRouter as Router} from 'react-router-dom';
-import AnonymousRoute from './anonymous-route';
-import HomeRoute from './home-route';
+import {PageContainer} from './page-container';
 import React from 'react';
-import RestrictedRouteA from './restricted-route-a';
-import RestrictedRouteB from './restricted-route-b';
 
 const oktaConfig = {
   clientId: '0oaf3emz9n7G0xYA20h7',
@@ -13,17 +10,14 @@ const oktaConfig = {
   redirectUri: `${window.location.origin}/implicit/callback`
 };
 
-const RouteConfig = () => (
+export const RouteConfig = () => (
   <Router>
     <Security
       client_id={oktaConfig.clientId}
       issuer={oktaConfig.issuer}
       redirect_uri={oktaConfig.redirectUri}
     >
-      <HomeRoute/>
-      <AnonymousRoute/>
-      <RestrictedRouteA/>
-      <RestrictedRouteB/>
+      <PageContainer/>
       <Route
         component={ImplicitCallback}
         path={oktaConfig.path}
@@ -31,5 +25,3 @@ const RouteConfig = () => (
     </Security>
   </Router>
 );
-
-export default RouteConfig;

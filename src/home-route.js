@@ -1,12 +1,18 @@
-import Home from './home';
+import {Home} from './home';
 import React from 'react';
 import {Route} from 'react-router-dom';
 
-const HomeRoute = () => (
+// import {SecureRoute} from '@okta/okta-react';
+
+export const HomeRoute = (props) => (
   <Route
-    component={Home}
+    exact={true}
     path='/'
+    render={(routeProps) => (
+      <Home
+        {...routeProps}
+        {...props}
+      />
+    )}
   />
 );
-
-export default HomeRoute;

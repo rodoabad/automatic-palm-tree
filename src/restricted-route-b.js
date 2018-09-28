@@ -1,12 +1,15 @@
 import React from 'react';
-import Restricted from './restricted';
+import {Restricted} from './restricted';
 import {SecureRoute as Route} from '@okta/okta-react';
 
-const RestrictedRouteB = () => (
+export const RestrictedRouteB = (props) => (
   <Route
-    component={Restricted}
     path='/restricted-b'
+    render={(routeProps) => (
+      <Restricted
+        {...routeProps}
+        {...props}
+      />
+    )}
   />
 );
-
-export default RestrictedRouteB;

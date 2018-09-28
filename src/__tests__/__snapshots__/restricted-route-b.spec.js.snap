@@ -2,28 +2,7 @@
 
 exports[`RestrictedRouteB component renders 1`] = `
 <withAuth(SecureRoute)
-  component={[Function]}
   path="/restricted-b"
-/>
-`;
-
-exports[`RestrictedRouteB component to be closed for unauthorized users 1`] = `
-<withAuth(SecureRoute)
-  component={[Function]}
-  path="/restricted-b"
-/>
-`;
-
-exports[`RestrictedRouteB path is correct 1`] = `
-<withAuth(SecureRoute)
-  component={[Function]}
-  path="/restricted-b"
-/>
-`;
-
-exports[`RestrictedRouteB route renders Restricted 1`] = `
-<withAuth(SecureRoute)
-  component={[Function]}
-  path="/restricted-b"
+  render={[Function]}
 />
 `;

@@ -2,28 +2,7 @@
 
 exports[`AnonymousRoute component renders 1`] = `
 <Route
-  component={[Function]}
   path="/anonymous"
-/>
-`;
-
-exports[`AnonymousRoute component to be open for non authorized users 1`] = `
-<Route
-  component={[Function]}
-  path="/anonymous"
-/>
-`;
-
-exports[`AnonymousRoute path is correct 1`] = `
-<Route
-  component={[Function]}
-  path="/anonymous"
-/>
-`;
-
-exports[`AnonymousRoute route renders Anonymous 1`] = `
-<Route
-  component={[Function]}
-  path="/anonymous"
+  render={[Function]}
 />
 `;

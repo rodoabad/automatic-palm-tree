@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageContainer component renders 1`] = `
+<section
+  className="pageContainer"
+>
+  <Navigation
+    className="navigation"
+  />
+  <HomeRoute
+    className="main"
+  />
+  <AnonymousRoute
+    className="main"
+  />
+  <RestrictedRouteA
+    className="main"
+  />
+  <RestrictedRouteB
+    className="main"
+  />
+</section>
+`;

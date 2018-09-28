@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hello component has a welcome message 1`] = `
-<h1
-  className="hello"
-  data-test="hello"
->
-  Hello, World!
-</h1>
-`;
-
 exports[`Hello component renders 1`] = `
 <h1
-  className="hello"
+  className=" hello"
   data-test="hello"
 >
-  Hello, World!
+  <div
+    className="message"
+  >
+    undefined
+  </div>
+  <div
+    className="name"
+  >
+    undefined
+  </div>
 </h1>
 `;

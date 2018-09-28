@@ -19,6 +19,8 @@
     "padded-blocks": [
       "error",
       "never"
-    ]
+    ],
+    "no-process-env": "off",
+    "react/jsx-tag-spacing": "off"
   }
 }

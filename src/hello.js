@@ -1,16 +1,25 @@
+import {hello, message, name} from './hello.scss';
+import PropTypes from 'prop-types';
 import React from 'react';
-import {hello} from './hello.scss';
 
-const Hello = () => (
+export const Hello = ({className}) => (
   <h1
-    className={hello}
+    className={`${className} ${hello}`}
     data-test='hello'
   >
-
-    {
-      `${process.env.MESSAGE}, ${process.env.NAME}!` // eslint-disable-line no-process-env
-    }
+    <div className={message}>
+      {`${process.env.MESSAGE}`}
+    </div>
+    <div className={name}>
+      {`${process.env.NAME}`}
+    </div>
   </h1>
 );
 
-export default Hello;
+Hello.propTypes = {
+  className: PropTypes.string
+};
+
+Hello.defaultProps = {
+  className: ''
+};

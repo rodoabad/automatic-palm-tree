@@ -1,7 +1,8 @@
+import './app.scss';
 import React from 'react';
-import RouteConfig from './route-config';
+import {RouteConfig} from './route-config';
 import {hot} from 'react-hot-loader';
 
-const App = () => <RouteConfig/>;
+export const App = () => <RouteConfig/>;
 
-export default hot(module)(App);
+export const AppWithHotReload = hot(module)(App);

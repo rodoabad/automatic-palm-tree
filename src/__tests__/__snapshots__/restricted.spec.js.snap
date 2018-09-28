@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Restricted component has styles 1`] = `
-<div
-  className="restricted"
->
-  <div>
-    Restricted user.
-  </div>
-</div>
-`;
-
-exports[`Restricted component is for restricted users 1`] = `
-<div
-  className="restricted"
->
-  <div>
-    Restricted user.
-  </div>
-</div>
-`;
-
 exports[`Restricted component renders 1`] = `
 <div
   className="restricted"

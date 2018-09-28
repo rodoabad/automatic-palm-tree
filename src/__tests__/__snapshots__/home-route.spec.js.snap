@@ -2,28 +2,8 @@
 
 exports[`HomeRoute component renders 1`] = `
 <Route
-  component={[Function]}
+  exact={true}
   path="/"
-/>
-`;
-
-exports[`HomeRoute component to be open for non authorized users 1`] = `
-<Route
-  component={[Function]}
-  path="/"
-/>
-`;
-
-exports[`HomeRoute path is correct 1`] = `
-<Route
-  component={[Function]}
-  path="/"
-/>
-`;
-
-exports[`HomeRoute route renders Home 1`] = `
-<Route
-  component={[Function]}
-  path="/"
+  render={[Function]}
 />
 `;
