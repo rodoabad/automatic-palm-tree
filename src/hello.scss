@@ -1,8 +1,8 @@
+@import 'variables';
+
 $breakpoint-tablet: 60em;
 
 .hello {
-  border: 0.01em solid deepskyblue;
-
   display: grid;
   grid-template-areas:
     'message name';
@@ -12,10 +12,12 @@ $breakpoint-tablet: 60em;
 
 .message {
   grid-area: message;
+  padding: $gutter;
 }
 
 .name {
   grid-area: name;
+  padding: $gutter;
 }
 
 @mixin media($width) {
