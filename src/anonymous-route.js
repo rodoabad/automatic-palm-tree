@@ -5,13 +5,11 @@ import {Route} from 'react-router-dom';
 export const AnonymousRoute = (props) => (
   <Route
     path='/anonymous'
-    render={(routeProps) => {
-      return (
-        <Anonymous
-          {...routeProps}
-          {...props}
-        />
-      );
-    }}
+    render={(routeProps) => (
+      <Anonymous
+        {...routeProps}
+        {...props}
+      />
+    )}
   />
 );

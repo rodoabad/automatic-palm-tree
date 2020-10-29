@@ -7,5 +7,6 @@ exports[`Home component renders 1`] = `
   <Hello
     className=""
   />
+  <SimpleAreaChart />
 </section>
 `;
